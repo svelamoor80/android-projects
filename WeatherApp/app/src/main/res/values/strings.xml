@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="edit_zipCode">Enter US zipcode</string>
+    <string name="button_show">Show Weather</string>
+    <string name="label_feelsLike">Feels Like&#160;</string>
+    <string name="label_wind">WIND</string>
+    <string name="label_humidity">HUMIDITY</string>
+    <string name="label_pressure">PRESSURE</string>
+</resources>
