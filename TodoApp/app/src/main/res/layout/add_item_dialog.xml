@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+    <EditText
+        android:id="@+id/addItemText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="?attr/listPreferredItemPaddingLeft"
+        android:layout_marginRight="?attr/listPreferredItemPaddingRight"
+        android:ems="10"
+        android:hint="@string/add_item"
+        android:inputType="textPersonName"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/prioritySpinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/addItemText"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:text="Priority"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <Spinner
+        android:id="@+id/prioritySpinner"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/addItemText"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:dropDownWidth="match_parent"
+        android:overlapAnchor="false"
+        android:paddingRight="10dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="16dp"
+        android:text="Due By"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_alignTop="@id/textView4"
+        android:layout_toRightOf="@id/textView4"
+        android:scaleType="fitXY"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <TextView
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toRightOf="@+id/imageButton2"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView4"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="Delete"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageButton2"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/deleteButton"
+        android:background="?attr/colorButtonNormal"
+        android:layout_marginBottom="10dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cancelButton"
+        android:layout_alignBottom="@+id/cancelButton"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/cancelButton"
+        android:layout_alignRight="@id/prioritySpinner"
+        android:background="@color/colorPrimary"
+        android:text="Save"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
+</RelativeLayout>
